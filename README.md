@@ -6,9 +6,7 @@
 
 This program is a simple article recommendation engine built on word2vec. 
 
-Given an article, 
-
-
+Given an article, this progrem will recommend 5 most relevant articles based on word vector and euclidean distances. 
 
 
 ## How to run the program 
