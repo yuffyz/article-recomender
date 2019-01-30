@@ -4,9 +4,14 @@
 
 ## Introduction
 
-This program is a simple article recommendation engine built on word2vec. 
+This program is a simple article recommendation engine that recommend the top 5 most relevant articles given an article you're reading. 
 
-Given an article, this progrem will recommend 5 most relevant articles based on word vector and euclidean distances. 
+The program makes use of word vector and euclidean distances. 
+
+
+## Dataset 
+
+The [BBC News](http://mlg.ucd.ie/datasets/bbc.html) dataset contains 2225 documents from the BBC news website corresponding to stories in five topical areas from 2004-2005. 
 
 
 ## How to run the program 
