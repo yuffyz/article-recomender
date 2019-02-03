@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Articles</title>
 </head>
+
 <style type="text/css">
 a:link {
     text-decoration: none;
@@ -12,11 +13,16 @@ a:hover {
     text-decoration: underline;
 }
 </style>
+
 <body>
 
 <h1 style="">Articles</h1>
 
-ARTICLE TITLES/LINKS
+<ul>
+	{% for article in articles %}
+	<li><a href='{{article.url}}'>{{article.title}}</a></li>
+	{% endfor %}
+</ul>
 
 </body>
 </html>

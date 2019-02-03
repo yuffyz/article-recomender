@@ -26,12 +26,16 @@
 <body>
 <div class="grid">
     <div class="col-2-3">
-        <h2>TITLE</h2>
-        TEXT WITH P TAGS AROUND PARAGRAPHS
+        <h2>{{article[1]}}</h2>
+        {% for line in article[2].split('\n') %}
+        <p>{{line}}</p>
+        {% endfor %}
     </div>
     <div class="col-1-3">
         <p><b>Similar articles</b></p>
-        LIST OF RECOMMENDED ARTICLE TITLES/LINKS
+        {% for a in rec_articles %}
+        <br><a href='{{a[0]}}'>{{a[1]}}</a></br>
+        {% endfor %}
     </div>
 </div>
 
