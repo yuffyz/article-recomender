@@ -26,7 +26,7 @@ For each document, we calculate the centroid of the document's cloud of word vec
 
 The program reads in a database of word vectors and a corpus of text articles then organizing them into a handy table (list of lists) for processing.
 
-The web server displays a list of BBC articles for URL http://localhost:5000 (testing) and the IP xxx hosted on AWS. Clicking on any articles of this page will redirect you to an article page that shows the text of the article as well as a list of five recommended articles. 
+The web server displays a list of BBC articles for URL http://localhost:5000 (testing) and the IP hosted on Google Cloud. Clicking on any articles of this page will redirect you to an article page that shows the text of the article as well as a list of five recommended articles. 
 
 ## Source 
 
