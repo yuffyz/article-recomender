@@ -3,9 +3,7 @@
 
 ## Introduction
 
-This program is a simple article recommendation engine that recommend the top 5 most relevant articles given an article you're reading. 
-
-The program makes use of word vector and euclidean distances. 
+This program is a simple article recommendation engine that recommend the top 5 most relevant articles given an article you're reading. The algorithm makes use of word vector and euclidean distances. 
 
 
 ## Dataset 
