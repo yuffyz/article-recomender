@@ -3,11 +3,7 @@
 
 ## Introduction
 
-<<<<<<< HEAD
 This program is a simple article recommendation engine that recommend the top 5 most relevant articles given an article you're reading. The algorithm makes use of word vector (GloVe, BERT) and euclidean distances. 
-=======
-This program is a simple article recommendation engine that recommend the top 5 most relevant articles given an article you're reading. The algorithm makes use of word vector and euclidean distances. 
->>>>>>> 64d69c8437253b169e742febebd74917f1200592
 
 
 ## Dataset 
@@ -58,11 +54,7 @@ To launch this server on AWS, install [gunicorn](https://gunicorn.org/).
 
 ## Reference
 
-<<<<<<< HEAD
 [BERT FineTuning with Cloud TPUs](https://colab.research.google.com/github/tensorflow/tpu/blob/master/tools/colab/bert_finetuning_with_cloud_tpus.ipynb)
-=======
-The web server displays a list of BBC articles for URL http://localhost:5000 (testing) and the IP hosted on Google Cloud. Clicking on any articles of this page will redirect you to an article page that shows the text of the article as well as a list of five recommended articles. 
->>>>>>> 64d69c8437253b169e742febebd74917f1200592
 
 
 ## Credit 
