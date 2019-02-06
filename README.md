@@ -5,9 +5,6 @@
 
 This program is a simple article recommendation engine that recommend the top 5 most relevant articles given an article you're reading. The algorithm makes use of word vector (GloVe, BERT) and euclidean distances. 
 
-
-## Dataset 
-
 The [BBC Dataset](http://mlg.ucd.ie/datasets/bbc.html) contains 2225 documents from the BBC news website corresponding to stories in five topical areas from 2004-2005. By default, the full filename will be `bbc/topic/filename.txt` (this format is coded into doc2vec.py). 
 
 
