@@ -9,6 +9,7 @@ import sys
 
 app = Flask(__name__)
 
+# the articles list page 
 @app.route("/")
 def articles():
     """Show a list of article titles"""
@@ -21,25 +22,35 @@ def articles():
     return render_template('articles.html', articles = alist)
 
 
+# the article page 
 @app.route("/article/<topic>/<filename>")
 def article(topic,filename):
     """
     Show an article with relative path filename. Assumes the BBC structure of
     topic/filename.txt so our URLs follow that.
     """
-    current_article = topic + "/" + filename 
-    rec = recommended(article, articles, 5)
 
     for i in articles:
-    	if i[0] == current_article:
+        if i[0] == "%s/%s"%(topic, filename):
             current_article = i
-    		break 
-    return render_template('article.html', rec_articles=rec, article = current_article)
+            break 
+
+    if current_article:
+        title = current_article[1]
+        text = current_article[2]
+        rec = recommended(current_article, articles, 5)
+        rec_list = list()
+        for i in rec_list:
+            title = i[1]
+            url = "/article/"+r[0]
+            rec_list.append({"title":title, "url":url})
+        return render_template('article.html', rec_articles=text.replace('\n', '<br />'), title = title)
+    return "Page not found", 404
 
 
 
 # initialization
-i = sys.argv.index('server:app')
+i = sys.argv.index('server.py')
 glove_filename = sys.argv[i+1]
 articles_dirname = sys.argv[i+2]
 
@@ -52,3 +63,6 @@ without the title
 """
 gloves = load_glove(glove_filename)
 articles = load_articles(articles_dirname, gloves)
+
+if __name__ == "__main__":
+    app.run(debug=True)

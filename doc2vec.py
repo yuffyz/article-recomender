@@ -204,3 +204,18 @@ def recommended(article, articles, n):
     return rec
 
 
+'''
+# a main function for testing 
+if __name__ == '__main__':
+    glove_filename = sys.argv[1]
+    articles_dirname = sys.argv[2]
+
+    gloves = load_glove(glove_filename)
+    article = load_articles(articles_dirname, gloves)
+    rec = recommended(article[5], article, 5)
+    
+    # print(gloves['dog'])
+    # print(articles[6])
+    print(rec)
+'''
+
